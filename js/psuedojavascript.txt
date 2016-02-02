@@ -1,0 +1,29 @@
+//slide left/right for portfolio/profile
+$('.profile_link').onclick();
+	slide portfolio_page elements left
+	slide profile_page elements left
+
+$('.portfolio_link').onclick();
+	slide portfolio_page elements right
+	slide profile_page elements right
+
+
+//opening card for projects
+$('project_link').onclick();
+	display(project_page);
+$('close_project').onclick();
+	hide(project_page);
+
+//opening card for timeline
+$('timeline_link').onclick();
+	display(timeline_page);
+$('close_timeline').onclick();
+	hide(timeline_page);
+
+//profile page: images automatic carousel
+var newArray = ['img1, img2, img3, img4'];
+var imgCarousel;
+for i<imgCarousel.length, i++
+
+
+

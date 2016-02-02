@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Justine Sun Dela Cruz</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -15,16 +15,30 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Karla:300,400,700,900,400italic
+          |Merriweather:300,400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+<!--   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.0.1/emojify.min.css" />
+  <link href="css/emojify-emoticons.css" rel="stylesheet" type="text/css">
+  <link href="css/emojify.css" rel="stylesheet" type="text/css"> -->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/emojify.js"></script>
+  <script src="js/emojify.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.0.1/emojify.min.js"></script>
+
+
 
 </head>
 <body>
@@ -32,15 +46,55 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+
+    <nav>
+      <div class="row nav" style="margin-top:5%">
+        <div class="one-third column" id="portfoliolink">
+          <h6><a href="index.html">Portfolio</a></h6>
+            <span class="link__underline"></span>
+        </div>
+        <div class="one-third column" id="namelogo">
+          <h6>Justine Sun Dela Cruz</h6>
+        </div>
+        <div class="one-third column" id="profilelink">
+          <h6><a href="profile.html">Profile</a></h6>
+          <span class="link__underline"></span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row headline" style="margin-top:7%" align="center">
+      <h4>I'm Justine, a product designer working in San Francisco.</h4>
+    </div>
+
+    <div class="row portfolio" style="margin-top: 5%">
+      <div class="one-third column" id="project1">
+        <a href="translingua.html">
+        <h4 class="projtitle">TransLingua</h4>
+        <p class="projsub">Contextual language-learning</p></a>
+      </div>
+      <div class="one-third column" id="project2">
+        <h4 class="projtitle">Vers</h4>
+        <p class="projsub">Hospital wayfinding system</p>
+      </div>
+      <div class="one-third column" id="project3">
+        <h4 class="projtitle">LTracker</h4>
+        <div class="projsub">Smart gym tracking</p>
       </div>
     </div>
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <script> EMOJI SCRIPT:: NOT WORKING
+//       emojify.setConfig({
+//         // emojify_tag_type:'div'
+//         mode: 'sprite'
+//         img_dir: '/images/emojis'
+//       });
+//       emojify.replace(":wave");
+//         "acdefg<img title=":wave:" alt="wave" src="images/emojis/wave.png" />"
+</script> -->
 </body>
+
 </html>
