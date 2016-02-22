@@ -431,7 +431,7 @@ hr {
   border-top: 1px solid #E1E1E1; }
 
 
-  .emoji {
+.emoji {
     width: 1.5em;
     height: 1.5em;
     display: inline-block;
@@ -677,10 +677,11 @@ nav .current {
 
 .project figcaption {
    position: absolute; 
-   top: 55%; 
+   top: 67%; 
    left: 0; 
    width: 100%; 
-   z-index: 99;
+   z-index: 1;
+   overflow: hidden;
 }
 .project figcaption .proj-title {
   font-family: Karla;
@@ -699,7 +700,7 @@ nav .current {
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  top:5em;
+  top:2em;
  }
 
 
@@ -707,20 +708,21 @@ nav .current {
 /***** Sadie *****/
 /*---------------*/
 
-/*.project ::before {
+.project.project-image :before  {
   position: relative;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 85%);
-  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 85%);
+  /*background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 85%);
+  background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 85%);*/
+  background: pink;
   content: '';
   opacity: 0;
-  -webkit-transform: translate3d(0,80%,0);
-  transform: translate3d(0,80%,0);
+/*  -webkit-transform: translate3d(0,80%,0);
+  transform: translate3d(0,80%,0);*/
   overflow: hidden;
-}*/
+}
 
 
 .project h2 {
@@ -744,17 +746,16 @@ nav .current {
 }
 
 .project p {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   padding: 2em;
-  width: 100%;
   opacity: 0;
   -webkit-transform: translate3d(0,10px,0);
   transform: translate3d(0,10px,0);
 }
 
-.project:hover h2 {projec
+.project:hover h2 {
   color: #fff;
   -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
   transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
@@ -769,9 +770,9 @@ nav .current {
 
 
 
-/* PROJECT HOVER EFFECT
+/* PROJECT BLUR HOVER EFFECT
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
+/*
 .project-image img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
@@ -783,7 +784,7 @@ nav .current {
   filter: blur(0);
 }
 
-
+*/
 
 
 
