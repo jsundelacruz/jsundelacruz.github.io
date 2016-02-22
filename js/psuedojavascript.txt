@@ -27,3 +27,43 @@ for i<imgCarousel.length, i++
 
 
 
+$(document).ready (function() {
+
+	var images = [
+		'images/profile1.jpg', 
+		'images/profile2.jpg', 
+		'images/profile3.jpg', 
+		'images/profile4.jpg', 
+		'images/profile5.jpg', 
+		'images/profile6.jpg'];
+
+	var counter = 0;
+
+	$('.next').click(function() {
+	  if (counter < images.length - 1) {
+	    counter = counter + 1;
+	  }
+	  $('.image').attr('src', images[counter]);
+	});
+
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true;
+
+
+}); //end ready
+
+
+
+
+
+
+
+
+
+
+
+
+

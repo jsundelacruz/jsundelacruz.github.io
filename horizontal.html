@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Scroll Horizontally</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Karla:300,400,700,900,400italic
+          |Merriweather:300,400,400italic,700,700italic' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/elementTransitions.min.css" />
+
+
+  
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+
+<style>
+
+body {
+	height:100%;
+	width:100%;
+	margin:0;padding:0;
+	overflow:hidden;
+}
+
+#wrapper {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;left:0;
+	background-color:#ccc;
+	overflow:hidden;
+}
+
+	#mask {
+		width:500%;
+		height:100%;
+		background-color:#eee;
+	}
+
+	.item {
+		width:20%;
+		height:100%;
+		float:left;
+		background-color:#ddd;
+	}
+	
+	
+	.content {
+		width:100%;
+		height:80%;
+		top:20%;
+		margin:0 auto;
+		background-color:#aaa;
+		position:relative;
+	}
+	
+	.selected {
+		background:#fff;
+		font-weight:700;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	nav {
+		position: fixed;
+	}
+
+</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+	<nav>
+
+		<div class="row">
+          <div class="one-third column" id="portfoliolink">
+            <h6><a href="#item1" class="panel">Portfolio</a></h6>
+          </div>
+          <div class="one-third column" id="namelogo">
+            <h6>Justine Sun Dela Cruz</h6>
+          </div>
+          <div class="one-third column" id="profilelink">
+            <h6><a href="#item2" class="panel">Profile</a></h6>
+          </div>
+        </div>
+
+	</nav>
+
+	<div id="mask">
+
+		<div id="item1" class="item">
+			<a name="item1"></a>
+			<div class="content">
+
+				<div class="row headline" align="center">
+	              <h4>I'm Justine, a product designer working in San Francisco.</h4>
+	            </div>
+
+	            <div class="row">
+
+	              <div class="one-third column" id="project1">
+	                <a href="translingua.html">
+	                <h4 class="projtitle">TransLingua</h4>
+	                <p class="projsub">Contextual language-learning</p></a>
+	              </div>
+	              <div class="one-third column" id="project2">
+	                <h4 class="projtitle">Vers</h4>
+	                <p class="projsub">Hospital wayfinding system</p>
+	              </div>
+	              <div class="one-third column" id="project3">
+	                <h4 class="projtitle">LTracker</h4>
+	                <p class="projsub">Smart gym tracking</p>
+	              </div>
+
+	            </div> <!-- end div .row -->
+
+			</div> <!--  end div .content -->
+		</div> <!-- end div #item1 -->
+		
+		<div id="item2" class="item">
+			<a name="item2"></a>
+			<div class="content">
+
+
+				<div class="row">
+
+              		<div class="seven columns" id="profileinfo">
+
+	                	<h5>I'm currently working at <a href="http://fuze.com">Fuze</a> in San Francisco full-time, and taking a part-time course in front-end web development.</h5>
+		                <h6>Before this I graduated with a Bachelor of Industrial Design and spent some time working on <a href="http://blackberry.com">BlackBerry</a>’s Foresights as a UX Designer.</h6>
+
+            		<div class="profilelinks">
+	                  <p>>  <a href="resume.pdf">download my resume     <i class="fa fa-file-pdf-o"></i></a></p> 
+	                  <p>>  <a href="timeline.html">learn more about me   <i class="fa fa-info-circle"></i></a></p>
+	                  <p>>  <a href="mailto:justinesundelacruz@gmail.com" id="email" alt="copy email address">justinesundelacruz@gmail.com</a>    <i class="fa fa-clipboard copy-to-clipboard" data-clipboard-target="#email"></i> <span id="copied">email copied to clipboard!</span></p>
+	                </div>
+
+	                <div class="socialmedia">
+	                  <ul class="social-icons">
+	                    <li><a href="http://linkedin.com/in/jsundelacruz" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+	                    <li><a href="http://twitter.com/jsundelacruz" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+	                    <li><a href="http://instagram.com/jsundelacruz" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+	                    <li><a href="http://github.com/jsundelacruz" class="social-icon"> <i class="fa fa-github"></i></a></li>
+	                  </ul>
+	                </div>
+
+                </div> <!-- end div .row -->
+
+              <div class="five columns" id="profilephoto">
+                <div class="profile-photos">
+                  <div><img class="u-max-full-width" src="images/profile/profile_yosemite.jpg"></div>
+                  <div><img class="u-max-full-width" src="images/profile/blackberry_jerome.jpg"></div>
+                  <div><img class="u-max-full-width" src="images/profile/entro_cynthia.jpg"></div>
+                  <div><img class="u-max-full-width" src="images/profile/carleton_jodie.jpg"></div>
+                </div>
+              </div>
+
+        </div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+  
+
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="http://code.jquery.com/jquery-1.12.0.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+<script src="js/elementTransitions.min.js"></script>
+
+<script src="js/clipboard.min.js"></script>
+
+<script src="js/emojify.js"></script>
+<script src="js/emojify.min.js"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+
+</body>
+</html>
