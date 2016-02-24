@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="css/animate.css">
-  
+
+  <link rel="stylesheet" href="css/hint.min.css">
+
   <link rel="stylesheet" type="text/css" href="css/slick.css"/>
 
   <!-- Favicon
@@ -47,6 +49,24 @@
 
 	</nav>
 
+	<div class="resp-nav">
+     <div class="row">
+
+		<div class="one-third column" id="name-logo">
+            <h6>Justine Sun Dela Cruz</h6>
+        </div>
+
+          <div class="one-third column" id="nav-portfolio">
+            <h6><a href="#portfolio" class="panel portfolio-link">Portfolio</a></h6>
+          </div>
+
+          <div class="one-third column" id="nav-profile">
+            <h6><a href="#profile" class="panel profile-link">Profile</a></h6>
+          </div>
+
+        </div>
+	</div>
+
 	<div id="mask">
 
 	<!-- #PORTFOLIO
@@ -56,7 +76,7 @@
 			<div class="content portfolio">
 
 				<div class="row headline" align="center">
-	              <h4>I'm Justine, a product designer working in San Francisco.</h4>
+	              <h4>I'm Justine, a product designer working in San Francisco. :wave:</h4>
 	            </div>
 
 	            <div class="row project-grid">
@@ -130,9 +150,26 @@
 		                <h6>Before this I graduated with a Bachelor of Industrial Design and spent some time working on <a href="http://blackberry.com">BlackBerry</a>’s Foresights as a UX Designer.</h6>
 
 	            		<div class="profile-links">
-		                  <p><a id="resume" href="#resume-page">download my resume     <i class="fa fa-file-pdf-o"></i></a></p> 
-		                  <p><a href="timeline.html">learn more about me   <i class="fa fa-info-circle"></i></a></p>
-		                  <p><a href="mailto:justinesundelacruz@gmail.com" id="email" alt="copy email address">justinesundelacruz@gmail.com</a>    <i class="fa fa-clipboard copy-to-clipboard" data-clipboard-target="#email"></i> <span id="copied">email copied to clipboard!</span></p>
+		                  <p>
+		                  	<a id="resume" href="#resume-page">view my resume</a>
+		                  	<!-- <a href="/resume.pdf" target="_blank" download></a> -->
+							<span class="hint--right" data-hint="+ download pdf">
+								<i class="fa fa-file-pdf-o"></i>
+ 							</span>
+		                  </p> 
+		                  <p>
+		                  	<a href="timeline.html">more about me</a>   
+		                  	<span class="hint--right" data-hint="view timeline">
+								<i class="fa fa-info-circle"></i>					
+ 							</span>
+		                  </p>
+		                  <p>
+		                  	<a href="mailto:justinesundelacruz@gmail.com" id="email" alt="copy email address">justinesundelacruz@gmail.com</a>    
+		                  	<span class="hint--right" data-hint="copy email">
+								<i class="fa fa-clipboard copy-to-clipboard" data-clipboard-target="#email"></i>					
+ 								<span id="copied">email copied to clipboard!</span>
+ 							</span>
+		                  </p>
 		                </div>
 
 		                <div class="socialmedia">
@@ -304,7 +341,7 @@
 		    	UX/UI  educational  app design
 			</div>
 
-			  <section class="cover">
+			  <section class="translingua-cover">
 			    <div class="container">
 			      <div class="row" style="margin-top:10%" align="center">
 			        <img class="u-max-full-width" src="images/translingua/cover.png">
@@ -323,7 +360,11 @@
 
 			  <section class="video" align="center">
 			  	<div class="container">
-			    	<iframe src="https://player.vimeo.com/video/117300558" width="720px" height="405px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			    	<video width="720px" controls>
+					<source src="videos/translingua/translingua-product.mp4" type="video/mp4">
+					<source src="translingua-product.webm" type="video/webm">
+					Your browser does not support HTML5 video.
+				</video>
 		      	</div>
 	      	</section>
 
@@ -465,13 +506,6 @@
 	        </div>
 	      </section>
 
-	       <section class="video" align="center">
-	        <div class="container">
-	          <iframe src="https://player.vimeo.com/video/117300541" width="720px" height="405px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	        </div>
-	      </section>
-
-
 	      <section class="finaldesign">
 	        <div class="container">
 
@@ -484,11 +518,11 @@
 	          </div>
 
 	          <div class="row">
-	            <div class="one-half column">
-	              <img class="u-max-full-width" src="http://placehold.it/350x300">
+	          	<div class="one-half column">
+	              <p style="text-align:left;margin:5% auto 2.5% auto;">Toggle between list view and map view.</p>
 	            </div>
 	            <div class="one-half column">
-	              <p style="text-align:left;margin:5% auto 5% auto;">Toggle between list view and map view.</p>
+	              <img class="u-max-full-width" src="http://placehold.it/350x300">
 	            </div>
 	          </div>
 
@@ -509,21 +543,141 @@
 	        </div>
 	      </section>
 
+	      <section class="video" align="center">
+	        <div class="container">	
+		        <h3>How is it used?</h3>
+        		<video width="720px" controls>
+					<source src="videos/translingua/translingua-interaction.mp4" type="video/mp4">
+					<source src="translingua-interaction.webm" type="video/webm">
+					Your browser does not support HTML5 video.
+				</video>
+	        </div>
+	      </section>
+
+		    
         </div>
+
+
+	      		<div class="container">
+
+		            <div class="one-half column project" id="project2" style="background-color:gray">
+		              prev
+		            </div>
+		            <div class="one-half column" style="background-color:gray">
+		              <a id="vers" class="close-translingua-page" href="#vers-page">next</a>
+		            </div>
+
+		        </div>
     </div><!--END TRANSLINGUA-->
 
 
     <!-- VERS
      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <div id="vers-page">
-	   
-	        <div id="btn-close-modal" class="close-vers-page"> 
-	            close 
-	        </div>
-	        
-	        <div class="modal-content">
-	            <!--Your modal content goes here-->
+
+    <div class="modal" id="vers-page">
+
+	    <div class="close">
+			<a id="btn-close-modal" class="close-vers-page">close</a>	
+		</div>
+   
+        <div class="modal-content">
+    
+	      <div class="container">
+	      	<div class="row">
+	        	<div class="project-title container">
+		          <h5>Vers: hospital wayfinding system</h5>
+		        </div>
+	      	</div>
+	      </div>
+
+	      	<div class="modal-content">
+
+	        	<div class="row project-context">
+				    capstone project
+			  	</div>
+				<div class="row project-category">
+			    	industrial design 	UX/UI  interaction   
+				</div>
+
+				<section class="vers-cover">
+				    <div class="container">
+				      <div class="row" style="margin-top:10%" align="center">
+				        <img class="u-max-full-width" src="images/vers/vers-cover.png">
+				      </div>
+				    </div>
+
+				    <div class="container">
+				      <div class="row" align="left">
+				        <div class="container">
+				          <h3>
+				          	Vers is a hospital wayfinding system designed to improve movement between spaces and efficiently utilize relevant stakeholders. 
+				          </h3>
+				        </div>
+				      </div>
+			    	</div>
+			  </section>
+
+
+			  <section class="stakeholders">
+			  	<div class="container">
+		          <div class="row">
+		          	<img class="u-max-full-width" src="images/vers/fillerverspage.png" />
+	          		</div>
+	          	</div>
+          	</section>
+
+		      <!-- <div class="container">
+		        <h5>
+		        	Hospitals are complex buildings constantly undergoing renovations.
+		        </h5>
+		    
+		      <div class="row">
+		        <div class="one-third column">
+		          <img class="u-max-full-width" src="images/vers/user-hospitalvolunteer.png">
+		          <p>
+		          	Hospital volunteers are usually stationed at the information desk are unable to help...
+		          </p>
+		        </div>
+		        <div class="one-third column">
+		          <img class="u-max-full-width" src="images/vers/user-visitor.png">
+		          <p>
+		          	...patients and visitors when they become lost within the maze of hallways. 
+		          </p>
+		        </div>
+		        <div class="one-third column">
+		          <img class="u-max-full-width" src="images/vers/user-hospitalstaff.png">
+		          <p>
+		          	Doctors, nurses and other hospital staff are stopped and asked for directions numerous times a day, resulting in lost time and money. 
+		          </p>
+		        </div>
+
+		      </div>
+		    </div>
+		    </section>
+
+		    <section class="white-bg">
+		    	<div class="container">
+		          <div class="row">
+		            <div class="one-half column">
+		              <h5>
+		              	Existing systems are disjointed and fail to connect the environment with digital information seamlessly.
+		              </h5>
+		              <p>
+		              	People have to cognitively orient themselves to the physical world when looking at maps. What’s missing from the current market is something available through the journey while still keeping the user engaged with their surroundings. 
+		              </p>
+		            </div>
+		            <div class="one-half column">
+		              <img class="u-max-full-width" src="images/vers/currentmarket.png">
+		            </div>
+		          </div>
+		        </div>
+		    </section> -->
+
+
+
+
+
 	        </div>
         </div>
 
@@ -555,9 +709,8 @@
 	<script src="js/clipboard.min.js"></script>
 
 	<script src="js/emojify.js"></script>
-	<script src="js/emojify.min.js"></script>
 
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/slick.min.js"></script>
 
 <!-- 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>

@@ -72,7 +72,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,
@@ -188,13 +188,15 @@ p {
 a {
   text-decoration: none;
 }
-.profile a {
+.profile a, 
+.resume a {
   display: inline-block;
   color: #829EAB;
   text-decoration: none;
 }
 
-.profile a::after {
+.profile a::after,
+.resume a::after {
     content: '';
     display: block;
     width: 0;
@@ -205,7 +207,8 @@ a {
 }
 
 
-.profile a:hover::after {
+.profile a:hover::after,
+.resume a:hover::after {
     border-bottom: none;
     width: 100%;
     transition: width .2s;
@@ -432,10 +435,11 @@ hr {
 
 
 .emoji {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     display: inline-block;
-    margin-bottom: -0.25em;
+    margin-bottom: 1.25em;
+    background-size: contain;
 }
 
 
@@ -486,12 +490,11 @@ there.
 /* NAVBAR 
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.portfolio-link:hover, 
-.portfolio-link:focus {
-    color:#ef6f49;
+.portfolio-link:hover{
+    color:#2ba6cb;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     padding-bottom: 5px;
-    border-bottom: 2px solid #ef6f49;
+    border-bottom: 2px solid #2ba6cb;
     -webkit-transition:all 0.2s ease-out;
     -moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
@@ -501,12 +504,17 @@ there.
     -moz-transform: translateY(0px);
     transform: translateY(0px);
 }
-.profile-link:hover, 
+
+.portfolio-link:focus,
 .profile-link:focus {
-    color:#ef6f49;
+  color:#2ba6cb
+}
+
+.profile-link:hover {
+    color:#2ba6cb;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     padding-bottom: 5px;
-    border-bottom: 2px solid #ef6f49;
+    border-bottom: 2px solid #2ba6cb;
     -webkit-transition:all 0.2s ease-out;
     -moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
@@ -518,12 +526,12 @@ there.
 }
 
 
-.close-translingua-page:hover, 
-.close-translingua-page:focus {
-    color:#ef6f49;
+#btn-close-modal:hover, 
+#btn-close-modal:focus {
+    color: #2ba6cb;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     padding-bottom: 5px;
-    border-bottom: 2px solid #ef6f49;
+    border-bottom: 2px solid #2ba6cb;
     -webkit-transition:all 0.2s ease-out;
     -moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
@@ -562,6 +570,10 @@ nav{
   clear: both;
 }
 
+.resp-nav {
+  display: none;
+  background-color: #eee;
+}
 
 nav a, 
 #resume-page a
@@ -572,13 +584,11 @@ nav a,
   color: #829EAB;
 }
 nav a:hover, 
-nav a:focus,
-#resume-page a:hover, 
-#resume-page a:focus {
-    color:#ef6f49;
+nav a:focus,{
+    color:#2ba6cb;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     padding-bottom: 5px;
-    border-bottom: 2px solid #ef6f49;
+    border-bottom: 2px solid #2ba6cb;
     -webkit-transition:all 0.2s ease-out;
     -moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
@@ -590,10 +600,10 @@ nav a:focus,
 }
 
 nav .current {
-    color:#ef6f49;
+    color:#2ba6cb;
     text-shadow: 0 0 1px rgba(255,255,255,0.3);
     padding-bottom: 5px;
-    border-bottom: 2px solid #ef6f49;
+    border-bottom: 2px solid #2ba6cb;
     -webkit-transition:all 0.2s ease-out;
     -moz-transition:all 0.2s ease-out;
     -o-transition:all 0.2s ease-out;
@@ -943,7 +953,13 @@ ul.social-icons {
   padding: 2rem;
   position: fixed;
   margin-top: 2rem;
-  z-index: 3;
+  z-index: 3;      
+  font-weight: 700;
+}
+@media (max-width: 1000px) {
+  .close {
+    margin-left:10em;
+    }
 }
 
 .project-title {
@@ -990,7 +1006,7 @@ ul.social-icons {
   font-family: Merriweather,
 }
 
-.cover{
+.translingua-cover{
   background-size: cover;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#008baf+1,302c56+99 */
   background: #008baf; /* Old browsers */
@@ -998,6 +1014,21 @@ ul.social-icons {
   background: -webkit-linear-gradient(top, #008baf 1%,#302c56 99%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #008baf 1%,#302c56 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008baf', endColorstr='#302c56',GradientType=0 ); /* IE6-9 */
+  padding: 1%;
+  margin: auto auto 5%;
+  color:#fff;
+  position: relative;
+  height: 100%;
+  }
+
+.vers-cover{
+  background-size: cover;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9b61d+0,f89f1e+100 */
+  background: #e9b61d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e9b61d 0%, #f89f1e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #e9b61d 0%,#f89f1e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #e9b61d 0%,#f89f1e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9b61d', endColorstr='#f89f1e',GradientType=0 ); /* IE6-9 */
   padding: 1%;
   margin: auto auto 5%;
   color:#fff;
@@ -1017,13 +1048,23 @@ img {
   background-color: #F3F3F8;
   padding: 5% 5% 5% 5%;    
   margin: 5% auto 5% auto;
-
 }
+.stakeholders h6
 .textincity h6,
 .currentmarket h6 {
   font-family: Karla;
   font-weight: 700; 
   text-align: center;
+}
+
+.white-bg h6 {
+  font-family: Karla;
+  font-weight: 700; 
+  text-align: center;
+}
+
+.white-bg {
+  margin: 5% 5% 5% 5%;    
 }
 
 .bigquestion {
@@ -1035,6 +1076,13 @@ img {
 
 section.video {
   margin: 5% auto 5% auto;
+}
+
+section.video2 {
+  padding: 5% 5% 5% 5%; 
+  margin: 5% auto 5% auto;
+  color:#fff;
+  background-color: #333333;
 }
 
 
@@ -1078,10 +1126,9 @@ body {
   }
 
   .selected {
-    color: gray;
+/*    color: gray;*/
   }
   
-
   .clear {
     clear:both;
   }

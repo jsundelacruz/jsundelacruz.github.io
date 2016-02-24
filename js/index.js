@@ -20,6 +20,19 @@ $(document).ready(function(){
       });
     };
 
+    //remove nav when resized
+    $(window).on('resize',function(){
+        if($(this).width() < 800){
+            $('nav').hide();
+            $('.resp-nav').show();
+        }
+         if($(this).width() > 800){
+            $('nav').show();
+            $('.resp-nav').hide();
+        }
+    });
+
+
    
 
     //open translingua page
@@ -30,7 +43,7 @@ $(document).ready(function(){
         modalTarget:'vers-page',
         animatedIn:'slideInUp',
         animatedOut:'slideOutDown',
-        color:'#3498db',
+        color:'#fff',
         // Callbacks
         beforeOpen: function() {
             console.log("The animation was called");
@@ -128,6 +141,10 @@ $(document).ready(function(){
     // });
 
    
+    //emojify
+        emojify.setConfig({emojify_tag_type:'div'});
+        emojify.run();
+
     //profile image carousel
     $(window).load(function(){
         $('.profile-photos').slick({
