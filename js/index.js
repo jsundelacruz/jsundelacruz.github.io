@@ -25,10 +25,14 @@ $(document).ready(function(){
         if($(this).width() < 800){
             $('nav').hide();
             $('.resp-nav').show();
+            $('.project-category').hide();
+            $('.project-context').hide();
         }
          if($(this).width() > 800){
             $('nav').show();
             $('.resp-nav').hide();
+            $('.project-category').show();
+            $('.project-context').show();
         }
     });
 
